@@ -134,6 +134,7 @@ a{
     overflow: scroll;
     
 }
+
 ::-webkit-scrollbar{
     display: none;
 }
