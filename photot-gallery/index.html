@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/33cebb3b10.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Photo Gallery || Horizontel Scroll</title>
+  </head>
+  <body>
+    <!-- This section describes the code of image carousel  -->
+    <div class="carousel-container">
+        <div class="carousel">
+          <img src="https://source.unsplash.com/9-hQjME_0bk" alt="Contessa" />
+          <img src="https://source.unsplash.com/6lSBynPRaAQ" alt="mclaren" />
+          <img src="https://source.unsplash.com/p060CZWRGSc" alt="Challenger" />
+          <img src="https://source.unsplash.com/4MNv_bI1kF4" alt="Charger" />
+          <img src="https://source.unsplash.com/f_SDCASisgs" alt="Ferrari" />
+        </div>
+  
+        <i class="fa-solid fa-caret-left" onclick="prevImage()" id="prevBtn"></i>
+  
+        <i class="fa-solid fa-caret-right" onclick="nextImage()" id="nextBtn"></i>
+      </div>
+
+
+    <!-- This section is for horizontel Scroll and photo Gallery, Works on Desktop! to use in mobile or other devices must need a mouse -->
+      <div class="title"><h2>Photo Gallery || Horizontel Scroll </h2></div>
+    <div class="gallery-wrap">
+
+
+
+      <i class="fa-solid fa-caret-left" id="prebtn"></i>
+
+      <div class="gallery">
+        <div>
+          <span
+            ><img src="https://source.unsplash.com/y2azHvupCVo" alt=""
+          /></span>
+          <span
+            ><img src="https://source.unsplash.com/IicyiaPYGGI" alt=""
+          /></span>
+          <span
+            ><img src="https://source.unsplash.com/CsymjRI5vhk" alt=""
+          /></span>
+        </div>
+        <div>
+          <span
+            ><img src="https://source.unsplash.com/Hao52Fu9-F8" alt=""
+          /></span>
+          <span
+            ><img src="https://source.unsplash.com/ETQ2KSeI8s0" alt=""
+          /></span>
+          <span
+            ><img src="https://source.unsplash.com/Nyvq2juw4_o" alt=""
+          /></span>
+        </div>
+        <div>
+          <span
+            ><img src="https://source.unsplash.com/2_3c4dIFYFU" alt=""
+          /></span>
+          <span
+            ><img src="https://source.unsplash.com/ZQB7Nr9nUBo" alt=""
+          /></span>
+          <span
+            ><img src="https://source.unsplash.com/T-0EW-SEbsE" alt=""
+          /></span>
+        </div>
+      </div>
+      <i class="fa-solid fa-caret-right" id="nxtbtn"></i>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+*{
+margin: 0 ;
+padding: 0 ;
+font-family: 'Poppins' , sans-serif ;
+}
+.hero
+{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(#f44336,#730228);
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    
+}
+.selector{
+    width: 350px;
+}
+#selectField{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    background: rgba(255,255,255,0.7);
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    cursor: pointer;
+
+}
+
+.fa-angle-down{
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+#list{
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    border-radius: 6px;
+    overflow: hidden;
+
+}
+.options {
+    list-style: none;
+    width: 100%;
+    padding: 15px 0 15px 70px;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+.hide{
+    visibility: hidden;
+}
+.options i{
+font-size: 25px;
+position: absolute;
+top: 12px;
+left: 25px;
+}
+.options:hover{
+    background: rgba(255,255,255,0.7);
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.fa-facebook{
+    color: rgb(28, 123, 255);
+}
+.fa-instagram{
+    color: rgb(255, 19, 165);
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-twitter{
+    color: rgb(28, 123, 255);
+}
+.fa-pinterest{
+    color: red;
+}
+.fa-reddit{
+    color: red;
+}
+

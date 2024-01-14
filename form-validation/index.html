@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/33cebb3b10.js" crossorigin="anonymous"></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="form">
+        <i class="fa-solid fa-paper-plane"></i>
+        <h2>Form Validation In Js</h2>
+        <form action="">
+            <div class="input-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" placeholder="Full Name" id="fullName" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+            <div class="input-group">
+                <label for="phoneNo">Phone No</label>
+                <input type="tel" id="phoneNo" placeholder="123 456 7890" onkeyup="validatePhone()" >
+                <span id="phone-error"></span>
+
+            </div>
+            <div class="input-group">
+                <label for="emaiId">Email Id</label>
+                <input type="email" id="emailId" placeholder="Enter Email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+
+            </div>
+            <div class="input-group">
+                <label for="msg">Your Message</label>
+                <textarea name="" id="msg" placeholder="Enter Your Message" onkeyup="validateMsg()" ></textarea>
+                <span id="msg-error"></span>
+                
+            </div>
+            <button onclick="return validateForm()"  class="btn" type="submit">Submit</button >
+            <span id="submit-error"></span>
+
+        </form>
+
+
+    </div>
+
+   
+<script src="script.js"></script>
+
+</body>
+</html>

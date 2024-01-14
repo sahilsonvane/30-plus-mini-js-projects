@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/33cebb3b10.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div class="stopwatch">
+        <h3 id="time">00:00</h3>
+      <h2 id="seconds">00</h2>
+      <div class="buttons">
+        <div onclick="watchStop()"><i class="fa-solid fa-stop"></i></div>
+        <div onclick="watchStart()"><i class="fa-solid fa-play"></i></div>
+        <div onclick="watchReset()">
+          <i class="fa-solid fa-rotate-left"></i>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let [miliSecond, seconds, minutes, hours] = [0, 0, 0, 0];
+      let Seconds = document.getElementById("seconds");
+      let Timer = document.getElementById("time");
+
+      let timer = null;
+      function stopWatch() {
+        seconds++;
+
+        if (seconds == 60) {
+          seconds = 0;
+          minutes++;
+          if (minutes == 60) {
+            minutes = 0;
+            hours++;
+          }
+        }
+
+        let h = hours < 10 ? "0" + hours : hours;
+        let m = minutes < 10 ? "0" + minutes : minutes;
+        let s = seconds < 10 ? "0" + seconds : seconds;
+
+        Seconds.innerHTML = s;
+        Timer.innerHTML = h + ":" +m;
+      }
+
+      function watchStart() {
+        if (timer !== null) {
+          clearInterval(timer);
+        }
+        timer = setInterval(stopWatch, 1000);
+      }
+
+      function watchStop() {
+        clearInterval(timer);
+      }
+
+      function watchReset() {
+        clearInterval(timer);
+        [seconds, minutes, hours] = [0, 0, 0];
+        Seconds.innerHTML = "00";
+        Timer.innerHTML = "00:00";
+      }
+    </script>
+  </body>
+</html>

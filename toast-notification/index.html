@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/cute-clipart/64/push-notifications.png" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/33cebb3b10.js" crossorigin="anonymous"></script>
+    <title>Toast Notification</title>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="showToast(successMsg)">Success</button>
+        <button onclick="showToast(errorMsg)">Error</button>
+        <button onclick="showToast(invalidMsg)">Invalid</button>
+    </div>
+    <div id="toastBox"></div>
+
+    
+
+<script>
+let toastBox = document.getElementById('toastBox');
+
+let successMsg = '<i class="fa-solid fa-circle-check"></i> Successfully Sumbitted';
+let errorMsg = '<i class="fa-solid fa-circle-xmark"></i> Error! Something went wrong';
+let invalidMsg = '<i class="fa-solid fa-circle-exclamation"></i> Invalid Event';
+
+function showToast(msg){
+    let toast = document.createElement('div');
+    toast.classList.add("toast");
+    toast.innerHTML = msg;
+    toastBox.appendChild(toast);
+
+    if (msg.includes('Error!')){
+        toast.classList.add('error');
+    }
+    if (msg.includes('Invalid')){
+        toast.classList.add('invalid');
+    }
+
+    setTimeout(()=>{
+        toast.remove();
+    }, 6000);
+
+
+}
+
+</script>
+
+</body>
+</html>
