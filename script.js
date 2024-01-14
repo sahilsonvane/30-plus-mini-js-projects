@@ -2,7 +2,7 @@ const projects = [
   {
     name: "Weather App",
     icon: "fa-solid fa-temperature-low",
-    image: "/30-plus-mini-js-projects/images/age-calculator.png",
+    image: "/30-plus-mini-js-projects/images/weather.png",
     url: "/30-plus-mini-js-projects/weather-app/",
     code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/age-calculator-app",
   },
@@ -10,7 +10,7 @@ const projects = [
     name: "Age Calculator",
     icon: "fa-solid fa-plus-minus",
     image: "/30-plus-mini-js-projects/images/age-calculator.png",
-    url: "/30-plus-mini-js-projects/age-calculator/",
+    url: "/30-plus-mini-js-projects/age-calculator-app/",
     code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/age-calculator-app",
   },
   {
@@ -116,7 +116,7 @@ const projects = [
 },{
     name : "Popup Notification",
     icon : "fa-solid fa-comment-dots",
-    image : "/30-plus-mini-js-projects/images/popup-notificaion.png",
+    image : "/30-plus-mini-js-projects/images/popup-notification.png",
     url : "/30-plus-mini-js-projects/popup-notification/",
     code : "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/popup-notification/"
 },
