@@ -292,8 +292,8 @@ footer div a :hover{
         height: 130px;
     }
     .visual img{
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;    }
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;    }
     .info{
         padding: 10px;
         height: 100px;
