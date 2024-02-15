@@ -16,6 +16,22 @@ const projects = [
     code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/age-calculator-app",
   },
   {
+    name: "To Do List",
+    icon: "fa-solid fa-list-check",
+    image: "/30-plus-mini-js-projects/images/to-do.png",
+    text: "To Do List is a web app that helps you organize your daily tasks. You can create, delete and mark tasks as completed with a simple click. Your tasks are saved even if you close the website, so you don't have to worry about losing your progress. This app is designed to be user-friendly and efficient.",
+    url: "/30-plus-mini-js-projects/to-do-list-app/",
+    code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/to-do-list-app/",
+  },
+  {
+    name: "Tost Notification",
+    icon: "fa-solid fa-chart-bar",
+    image: "/30-plus-mini-js-projects/images/toast-notification.png",
+    text: "A toast notification is a modern way to notify the user about various events, such as the success, warning, or error of a website operation. This function can be implemented by using JavaScript, which allows creating dynamic and interactive web pages. Toast notifications are usually displayed in a small pop-up window at the corner of the screen, and they disappear after a few seconds or when the user clicks on them.",
+    url: "/30-plus-mini-js-projects/toast-notification/",
+    code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/toast-notification/",
+  },
+  {
     name: "Calculator",
     icon: "fa-solid fa-calculator",
     image: "/30-plus-mini-js-projects/images/calculator.png",
@@ -30,6 +46,14 @@ const projects = [
     text:"I'm so excited to share with you this custom circular progress bar that I created using complex HTML and CSS and a little JavaScript for functioning. It's a beautiful and dynamic way to display the progress of any task or activity. You can customize the color, size, thickness, and animation of the progress bar to suit your needs. It's also responsive and works well on different screen sizes. Let me show you how I did it.",
     url: "/30-plus-mini-js-projects/circular-progress-bar/",
     code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/circular-progress-bar/",
+  },
+  {
+    name: "Form Validation",
+    icon: "fa-brands fa-wpforms",
+    image: "/30-plus-mini-js-projects/images/form-validation.png",
+    text: "This project is designed to prevent invalid form submission. It ensures that the data entered by the user matches the expected data type and format. This project helps to avoid errors and improve user experience.",
+    url: "/30-plus-mini-js-projects/form-validation/",
+    code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/form-validation/",
   },
   {
     name: "Coming Soon Page",
@@ -63,14 +87,7 @@ const projects = [
     url: "/30-plus-mini-js-projects/drag-and-drop/",
     code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/drag-and-drop/",
   },
-  {
-    name: "Form Validation",
-    icon: "fa-brands fa-wpforms",
-    image: "/30-plus-mini-js-projects/images/form-validation.png",
-    text: "This project is designed to prevent invalid form submission. It ensures that the data entered by the user matches the expected data type and format. This project helps to avoid errors and improve user experience.",
-    url: "/30-plus-mini-js-projects/form-validation/",
-    code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/form-validation/",
-  },
+ 
   {
     name: "Background Remover Effect",
     icon: "fa-solid fa-images",
@@ -215,22 +232,7 @@ const projects = [
     url: "/30-plus-mini-js-projects/text-to-voice-converter/",
     code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/text-to-voice-converter/",
   },
-  {
-    name: "To Do List",
-    icon: "fa-solid fa-list-check",
-    image: "/30-plus-mini-js-projects/images/to-do.png",
-    text: "To Do List is a web app that helps you organize your daily tasks. You can create, delete and mark tasks as completed with a simple click. Your tasks are saved even if you close the website, so you don't have to worry about losing your progress. This app is designed to be user-friendly and efficient.",
-    url: "/30-plus-mini-js-projects/to-do-list-app/",
-    code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/to-do-list-app/",
-  },
-  {
-    name: "Tost Notification",
-    icon: "fa-solid fa-chart-bar",
-    image: "/30-plus-mini-js-projects/images/toast-notification.png",
-    text: "A toast notification is a modern way to notify the user about various events, such as the success, warning, or error of a website operation. This function can be implemented by using JavaScript, which allows creating dynamic and interactive web pages. Toast notifications are usually displayed in a small pop-up window at the corner of the screen, and they disappear after a few seconds or when the user clicks on them.",
-    url: "/30-plus-mini-js-projects/toast-notification/",
-    code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/toast-notification/",
-  },
+
 ];
 
 let ProjecTile = document.getElementById("project-tile");

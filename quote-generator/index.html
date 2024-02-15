@@ -26,12 +26,13 @@
     const Author = document.querySelector("#author");
 
 
-    const api_url = "https://api.breakingbadquotes.xyz/v1/quotes"; 
+    const api_url = "https://zenquotes.io/api/random"; 
     
 
     async function getQuote(url){
          const response = await fetch(url);
          var data = await response.json();
+         console.log(data)
          Quote.innerHTML = data[0].quote;
          Author.innerHTML = data[0].author;        
 
