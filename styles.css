@@ -110,10 +110,30 @@ body{
    .button:active {
     transform: scale(0.9);
    }
+.hero .image{
+    filter: drop-shadow(0 0.75em 10px rgba(255, 255, 0, 0.442));
+}
 .hero .image img{
     width: 300px;
     clip-path: polygon(51% 100%, 91% 87%, 99% 0, 0 0, 9% 87%);
-    box-shadow: 10px 10px 10px #737176b0;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 .project-tiles{
