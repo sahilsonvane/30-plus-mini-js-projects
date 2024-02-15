@@ -1,3 +1,33 @@
+// function for dark mode
+const switchBtn = document.getElementById("switch-btn");
+
+if(localStorage.getItem("theme-mode") == null){
+  localStorage.setItem("theme-mode", "dark");
+}
+
+let localData = localStorage.getItem("theme-mode");
+
+
+if(localData == "dark"){
+  document.body.classList.remove("light");
+  switchBtn.checked = false;
+}else if(localData == "light"){
+  document.body.classList.add("light");
+  switchBtn.checked = true;
+}
+
+
+switchBtn.addEventListener("change", (e) => {
+  if (e.currentTarget.checked) {
+    document.body.classList.add("light");
+    localStorage.setItem("theme-mode", "light");
+
+  } else {
+    document.body.classList.remove("light");
+    localStorage.setItem("theme-mode", "dark");
+  }
+});
+
 const projects = [
   {
     name: "Weather App",
@@ -156,7 +186,7 @@ const projects = [
     name: "Popup Notification",
     icon: "fa-solid fa-comment-dots",
     image: "/30-plus-mini-js-projects/images/popup-notification.png",
-    text: "The project outlines a JavaScript-based animated popup notification component, designed to display various types of notifications on web pages using CSS animations, transitions, themes, positions, durations, and callbacks.",
+    text: "The project outlines a JavaScript-based animated popup notification component, designed to display various types of notifications on web pages using CSS animations, transitions, theme-modes, positions, durations, and callbacks.",
     url: "/30-plus-mini-js-projects/popup-notification/",
     code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/popup-notification/",
   },

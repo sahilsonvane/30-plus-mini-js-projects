@@ -3,17 +3,41 @@ margin: 0 ;
 padding: 0 ;
 font-family: 'Poppins' , sans-serif ;
 box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+:root{
+    /* black color shades - charleston geen #232b2b */
+    /* black color shades - dark jungle green #1a2421 */
+    /* black color shades - onyx #353839 */
+    /* white color shades - gray cloud #b6b6b4 */
+    /* white shades - alabaster #edeae0 */
+    /* white shades - light white #F3F2ED */
+    /* white shades - vista white #FDFCFA */
+   --hero-background-color: #0f2027;
+    --hero-background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    --heading-background: -webkit-linear-gradient( #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    --primary-color: #1a2421;
+    --secondary-color: #353839;
+    --primary-text: #FDFCFA;
+}
+.light{  
+    --hero-background-color:#acb6e5;
+    --hero-background-image:linear-gradient(to right, #acb6e5, #86fde8);
+    --heading-background: -webkit-linear-gradient( #434343,#000000);
+    --primary-color:#F3F2ED ;
+    --secondary-color: #edeae0 ;
+    --primary-text: #1a2421;
 }
 body{
-    background-color: #d8dede;
-    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%) ;
-
+    background-color: var(--primary-color);
 }
 
 .hero{
     width: 100vw;
     min-height: 100vh;
-    background-image: linear-gradient(315deg, #0000006d , #00000066 ) , url(https://source.unsplash.com/xrVDYZRGdw4);
+    background-color: var(--hero-background-color);
+    background-image: var(--hero-background-image);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,14 +51,14 @@ body{
     font-weight: 800;
     /* color: #f3e5ab; */
     font-size: 72px;
-    background: -webkit-linear-gradient(#46e41a,#eae1f9);
+    background: var(--heading-background);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 .hero h2{
     margin: 10px 0;
-    color: #f5f5f5;
+    color: var(--primary-text);
     font-size: 1.4rem;
 }
 .button {
@@ -89,8 +113,7 @@ body{
 .hero .image img{
     width: 300px;
     clip-path: polygon(51% 100%, 91% 87%, 99% 0, 0 0, 9% 87%);
-    box-shadow: 10px 10px 10px #7d2ae8;
-    
+    box-shadow: 10px 10px 10px #737176b0;
 }
 
 .project-tiles{
@@ -108,13 +131,14 @@ a{
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    outline: solid 2px #1e1824;
-    background-color: #d8dede;
+    outline: solid 2px var(--primary-color);
+    background-color: var(--secondary-color);
 
 }
 .visual{
     width: 100%;
     height: 230px;
+
 }
 .visual img{
    width: 100%;
@@ -128,8 +152,8 @@ a{
     width: 100%;
     height: 120px;
     padding: 20px;
-    background-color: #282C35;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--primary-text);
     overflow: scroll;
     
 }
@@ -155,7 +179,7 @@ a{
     display: flex ;
     align-items: center ;
     justify-content: space-between ; 
-    background-color: #282C35;
+    background-color: var(--secondary-color);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 20px;
@@ -169,7 +193,7 @@ a{
     font-size: 14px;
     color: #fff;
     outline: 0;
-    border: 1px solid #e5bdf6;
+    border: 1px solid #684577;
     border-radius: 10px;
     width: 100px;
     transition: all 0.2s linear;
@@ -178,6 +202,8 @@ a{
 }
 .btn:nth-child(2){
     background: #00755E;
+    border: 1px solid #21574c;
+
 }
 .buttons .btn:hover{
     transform: scale(1.1);
@@ -188,15 +214,16 @@ a{
     padding:6px 10px;
     outline: none;
     border: 1px solid #ccc;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--secondary-color);
+    color: var(--primary-text);
     cursor: pointer;
 
 
 }
 .bt:disabled{
-    color: #dcdcdc;
-    background: #CCC;
+    color: var(--primary-text);
+    background: var(--secondary-color);
+    opacity: 0.5;
    
 }
 .pagination-box{
@@ -217,19 +244,19 @@ a{
     cursor: pointer;
     padding: 5px 10px;
     border: 1px solid #ccc;
-    background-color: #fff;
-    color: black;
+    background-color: var(--secondary-color);
+    color: var(--primary-text);
 }
 .pagination li.active {
     background-color: #007bff;
-    color: #fff;
+    color: #f3f3f3;
 }
 footer{
     width: 100%;
     /* height: 80px; */
     padding: 40px 20px;
-    background: #282C35;
-    color: #ccc;
+    background: var(--secondary-color);
+    color: var(--primary-text);
     display: flex ;
     align-items: center ;
     justify-content: space-between ;
@@ -246,14 +273,18 @@ footer div a{
 text-decoration: none;
 margin-left: 20px;
 font-size: 30px;
-color: #ccc;
+color: var(--primary-color);
 transition: transform 3s linear;
+background: var(--primary-text);
+padding: 10px;
+border-radius: 10px;
 }
 footer div a .fa-envelope{
-   color: rgb(255, 59, 99);
+
+   color: rgb(254, 4, 54);
 }
 footer div a .fa-github{
-   color: #ccc;
+   color: var(--primary-color);
 }
 footer div a .fa-linkedin-in{
    color: #0077b5 ;
@@ -262,14 +293,74 @@ footer div a :hover{
     transform: scale(1.5);
 }
 
-
+/* toggle switch  */
+/* The switch - the box around the slider */
+.mode-btn{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: max-content;
+    -webkit-tap-highlight-color:  transparent;
+}
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    --background: #28096b;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+  }
+  
+  input:checked + .slider {
+    background-color: #522ba7;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+  }
 
 @media only screen and (max-width:768px){
     .hero{
         flex-direction: column-reverse;
-
+        
     }
     .hero .image img{
+    margin-top: 30px;
+
         width: 240px;
     }
     .text{
