@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <style>
+        *{
+        margin: 0 ;
+        padding: 0 ;
+        font-family: 'Poppins' , sans-serif ;
+        box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background:linear-gradient(rgb(131, 61, 131),rgb(166, 28, 166));
+            display: flex ;
+            align-items: center ;
+            flex-direction: column;
+            padding: 100px 0 50px;
+            gap: 20px;
+        }
+        h2{
+            font-size: 42px;
+            text-align: center;
+            color: #ffffffed;
+            margin-bottom: 30px;
+        }
+        .text{
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            background: #14A44D;
+            font-size: 18px;
+            color: #ffffffef;
+
+        }
+        .input-box{
+            background: #fff;
+            width: 400px;
+            height: 100px;
+            display: flex ;
+            align-items: center ;
+            justify-content: center ;
+            gap: 10px;
+            border-radius: 20px;
+            padding: 0 30px;
+            
+        }
+        #text-input{
+            border: 0;
+            outline: 0;
+            border-bottom: 2px solid #3B71CA ;
+            flex: 1;
+            font-size: 18px;
+        }
+        .btn{
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 15px;
+            outline: 0;
+            border: 2px solid #0ba147;
+            cursor: pointer;
+            font-weight: bold;
+            color: #fff;
+            background: #14A44D;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.678);
+        }
+        #result{
+            color: #fff;
+            width: 400px;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Palindrome Checker</h2>
+        <div class="text"><p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p></div>
+        <div class="input-box">
+            <input type="search" id="text-input" autocomplete="false">
+            <button id="check-btn" class="btn">Check</button>
+        </div>
+        <div id="result"></div>
+    </div>
+   <script src="script.js"></script> 
+</body>
+</html>

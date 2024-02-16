@@ -86,6 +86,14 @@ const projects = [
     code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/form-validation/",
   },
   {
+    name: "Palindrome Checker",
+    icon: "fa-solid fa-bolt",
+    image: "/30-plus-mini-js-projects/images/palindrome.png",
+    text:  "A palindrome checker or validator function is a useful tool for verifying if a word or sentence is a palindrome. A palindrome is a word or sentence that reads the same from left to right and from right to left, regardless of punctuation, case, and spacing. For example, 'racecar' and 'Madam, I'm Adam' are palindromes. A palindrome checker or validator function can take a word or sentence as an input and return a boolean value (true or false) indicating whether it is a palindrome or not.",
+    url: "/30-plus-mini-js-projects/palindrome-checker/",
+    code: "https://github.com/Sahil-Sonvane/30-plus-mini-js-projects/tree/main/palindrome-checker/",
+  },
+  {
     name: "Coming Soon Page",
     icon: "fa-solid fa-clock",
     image: "/30-plus-mini-js-projects/images/coming-soon-page.png",
