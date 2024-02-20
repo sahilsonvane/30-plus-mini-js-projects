@@ -27,6 +27,7 @@
   --primary-color: #1a2421;
   --secondary-color: #353839;
   --primary-text: #fdfcfa;
+  --shadow: #121212;
 }
 .light {
   --hero-background-color: #acb6e5;
@@ -37,6 +38,8 @@
   --primary-color: #f3f2ed;
   --secondary-color: #eaeae7;
   --primary-text: #1a2421;
+  --shadow: rgba(24, 24, 24, 0.384);
+
 }
 /*  */
 body {
@@ -227,7 +230,8 @@ body {
 .project-tiles {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 40px;
   padding: 60px 10%;
 }
 a {
@@ -239,8 +243,8 @@ a {
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  outline: solid 1px var(--primary-text);
   background-color: var(--secondary-color);
+  box-shadow: 5px 5px 40px var(--shadow) ;
 }
 .visual {
   width: 100%;
