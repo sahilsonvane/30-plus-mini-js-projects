@@ -33,8 +33,8 @@
          const response = await fetch(url);
          var data = await response.json();
          console.log(data)
-         Quote.innerHTML = data[0].quote;
-         Author.innerHTML = data[0].author;        
+         Quote.innerHTML = data[0].q;
+         Author.innerHTML = data[0].a;        
 
 
         
